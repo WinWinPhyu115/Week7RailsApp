@@ -1,0 +1,13 @@
+<%= @user.name %>,<%= @user.email %>
+
+<%provide(:title, @user.name)%>
+<divclass="row">
+<asideclass="col-md-4">
+<sectionclass="user_info">
+<h1> 
+<%=gravatar_for @user%>
+<%= @user.name %>
+</h1>
+</section>
+</aside>
+</div>
